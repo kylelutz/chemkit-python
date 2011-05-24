@@ -1,0 +1,18 @@
+chemkit-python - a python wrapper for the chemkit library
+
+=== Introduction ==============================================================
+
+chemkit-python provides a python interface to the chemkit library.
+
+For more information see the chemkit website: http://www.chemkit.org
+
+=== Installation and Usage ====================================================
+
+See the included INSTALL file for directions for compiling, installing, and
+using the chemkit-python library.
+
+=== License ===================================================================
+
+The chemkit-python library is licensed under the BSD license. See the included
+LICENSE file to view the full license text.
+
