@@ -63,7 +63,7 @@ cdef class Vector3:
 
         return self._vector3.z()
 
-    def isNull(self):
-        """Returns True if the vector is null (i.e. (0, 0, 0))."""
+    def isZero(self):
+        """Returns True if the vector is zero (i.e. (0, 0, 0))."""
 
-        return self._vector3.isNull()
+        return self._vector3.isZero()

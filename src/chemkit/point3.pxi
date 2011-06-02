@@ -63,7 +63,7 @@ cdef class Point3:
 
         return self._point3.z()
 
-    def isNull(self):
-        """Returns True if the point is null (i.e. (0, 0, 0))."""
+    def isZero(self):
+        """Returns True if the point is zero (i.e. (0, 0, 0))."""
 
-        return self._point3.isNull()
+        return self._point3.isZero()

@@ -45,4 +45,4 @@ cdef extern from "chemkit/vector3.h" namespace "chemkit":
         double x()
         double y()
         double z()
-        bool isNull()
+        bool isZero()
