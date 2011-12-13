@@ -2,18 +2,9 @@
 find_package(PythonLibs REQUIRED)
 include_directories(${PYTHON_INCLUDE_PATH})
 
-# find boost
-find_package(Boost REQUIRED)
-include_directories(${Boost_INCLUDE_DIRS})
-
-# find eigen3
-find_package(Eigen3 REQUIRED)
-include_directories(${EIGEN3_INCLUDE_DIR})
-
-# find qt
-find_package(Qt4 4.6 COMPONENTS QtCore REQUIRED)
-set(QT_DONT_USE_QTGUI TRUE)
-include(${QT_USE_FILE})
+# find chemkit
+find_package(Chemkit COMPONENTS io md)
+include_directories(${CHEMKIT_INCLUDE_DIRS})
 
 set(SOURCES
   atom.pxd
@@ -50,7 +41,7 @@ add_custom_command(OUTPUT chemkit.cpp
 # build library
 add_library(chemkit-python SHARED chemkit.cpp)
 set_target_properties(chemkit-python PROPERTIES OUTPUT_NAME "chemkit" PREFIX "")
-target_link_libraries(chemkit-python chemkit)
+target_link_libraries(chemkit-python ${CHEMKIT_LIBRARIES})
 
 # find python site-packages directory for installation
 execute_process(COMMAND ${PYTHON_EXECUTABLE} 
