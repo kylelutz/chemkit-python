@@ -1,18 +1,8 @@
 chemkit-python - a python wrapper for the chemkit library
 
-=== Introduction ==============================================================
+The chemkit python bindings are now a part of the main chemkit
+package availble from http://wiki.chemkit.org/Get_Chemkit.
 
-chemkit-python provides a python interface to the chemkit library.
-
-For more information see the chemkit website: http://www.chemkit.org
-
-=== Installation and Usage ====================================================
-
-See the included INSTALL file for directions for compiling, installing, and
-using the chemkit-python library.
-
-=== License ===================================================================
-
-The chemkit-python library is licensed under the BSD license. See the included
-LICENSE file to view the full license text.
+To enable chemkit's python support you must build with the 
+CHEMKIT_BUILD_BINDINGS_PYTHON flag enabled.
 
